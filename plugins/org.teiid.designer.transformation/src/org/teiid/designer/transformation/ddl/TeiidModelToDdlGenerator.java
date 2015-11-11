@@ -381,10 +381,8 @@ public class TeiidModelToDdlGenerator implements TeiidDDLConstants, TeiidReserve
 		
 		String options = getProcedureOptions(procedure);
 		if( !StringUtilities.isEmpty(options)) {
-			sb.append(NEW_LINE + CLOSE_BRACKET);
+			sb.append(NEW_LINE);
 			sb.append(SPACE).append(options);
-		} else {
-			sb.append(CLOSE_BRACKET);
 		}
 		
 		// Depending on the procedure type, need to append either one of the following:
